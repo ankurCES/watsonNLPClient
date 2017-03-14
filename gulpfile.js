@@ -13,11 +13,7 @@ var devServerHost = require('ip').address();
 gulp.task( 'server', ['build'], function() {
   gulp.src('./www')
     .pipe(server({
-      livereload: true,
-      clientConsole: false,
-      directoryListing: false,
-      open: false,
-      host: devServerHost,
+      livereload: false,
       port: process.env.PORT || 3001
     }));
 });
