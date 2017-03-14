@@ -16,7 +16,8 @@
             "name": "Delivery",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -25,7 +26,8 @@
             "name": "Dine-out",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -34,7 +36,8 @@
             "name": "Nightlife",
             "alcohol": true,
             "food": true,
-            "dance": true
+            "dance": true,
+            "cafe": false
           }
         },
         {
@@ -43,7 +46,8 @@
             "name": "Catching-up",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": true
           }
         },
         {
@@ -52,7 +56,8 @@
             "name": "Takeaway",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -61,7 +66,8 @@
             "name": "Cafes",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": true
           }
         },
         {
@@ -70,7 +76,8 @@
             "name": "Daily Menus",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -79,7 +86,8 @@
             "name": "Breakfast",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": true
           }
         },
         {
@@ -88,7 +96,8 @@
             "name": "Lunch",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -97,7 +106,8 @@
             "name": "Dinner",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -106,7 +116,8 @@
             "name": "Pubs & Bars",
             "alcohol": true,
             "food": true,
-            "dance": true
+            "dance": true,
+            "cafe": false
           }
         },
         {
@@ -115,7 +126,8 @@
             "name": "Premium Delivery",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -124,7 +136,8 @@
             "name": "Pocket Friendly Delivery",
             "alcohol": false,
             "food": true,
-            "dance": false
+            "dance": false,
+            "cafe": false
           }
         },
         {
@@ -133,7 +146,8 @@
             "name": "Clubs & Lounges",
             "alcohol": true,
             "food": true,
-            "dance": true
+            "dance": true,
+            "cafe": false
           }
         }
       ];
@@ -151,6 +165,10 @@
             }
           }else if( !mappingObj.alcohol && !mappingObj.dance && mappingObj.food){
             if(category.alcohol === mappingObj.alcohol || category.food === mappingObj.food){
+              matchingIds.push(category.id);
+            }
+
+            if(category.cafe === mappingObj.cafe){
               matchingIds.push(category.id);
             }
           }
