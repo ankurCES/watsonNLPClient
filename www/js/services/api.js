@@ -68,7 +68,7 @@
             method: 'POST',
             headers: headers,
             data: $.param({
-              entity_id : params.entity_id,
+              entity_id : 7,
               entity_type : "city",
               q : params.q,
               cuisines : params.cuisines,
