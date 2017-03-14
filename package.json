@@ -88,7 +88,7 @@
   "readme": "ERROR: No README data found!",
   "scripts": {
     "start": "node app",
-    "postinstall": "gulp default"
+    "postinstall": "gulp serveprod"
   },
   "version": "1.0.1"
 }
